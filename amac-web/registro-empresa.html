@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registra tu empresa en AMAC y encuentra talento con experiencia.">
+    <title>AMAC | Registro de empresas</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+    <a href="#contenido" class="saltar-contenido">
+        Saltar al contenido
+    </a>
+
+    <header class="encabezado">
+        <div class="contenedor encabezado-contenido">
+            <a href="index.html" class="logo" aria-label="AMAC, página principal">
+                AMAC
+            </a>
+            <nav class="navegacion" aria-label="Navegación principal">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="index.html#vacantes">Vacantes</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Iniciar sesión</a>
+                    </li>
+                    <li>
+                        <a href="registro-candidato.html">Candidatos</a>
+                    </li>
+                    <li>
+                        <a href="empresa-vacantes.html">Empresas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <div class="contenedor">
+            <section class="seccion-centrada">
+                <h1>Registra tu empresa en AMAC</h1>
+                <p>
+                    Forma parte de nuestra comunidad y encuentra personas
+                    con experiencia, habilidades y talento para tu empresa.
+                </p>
+            </section>
+
+            <section class="formulario-contenedor">
+                <h2>Información de la empresa</h2>
+                <p>
+                    Completa los siguientes campos para crear tu cuenta.
+                </p>
+                <form class="formulario"
+                      action="registro-empresa-exitoso.html"
+                      method="get">
+
+                    <div class="formulario-campo">
+                        <label for="nombre-empresa">
+                            Nombre de la empresa
+                        </label>
+                        <input
+                            type="text"
+                            id="nombre-empresa"
+                            name="nombre-empresa"
+                            placeholder="Ej. Grupo Empresarial Norte"
+                            required>
+                    </div>
+
+                    <div class="formulario-campo">
+                        <label for="representante">
+                            Nombre del representante
+                        </label>
+                        <input
+                            type="text"
+                            id="representante"
+                            name="representante"
+                            placeholder="Nombre completo"
+                            required>
+                    </div>
+
+                    <div class="formulario-campo">
+                        <label for="correo">
+                            Correo electrónico empresarial
+                        </label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="empresa@ejemplo.com"
+                            required>
+                    </div>
+
+                    <div class="formulario-campo">
+                        <label for="telefono">
+                            Teléfono de contacto
+                        </label>
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="Ej. 8112345678"
+                            required>
+                    </div>
+
+                    <div class="formulario-campo">
+                        <label for="ubicacion">
+                            Ubicación de la empresa
+                        </label>
+                        <input
+                            type="text"
+                            id="ubicacion"
+                            name="ubicacion"
+                            placeholder="Ciudad y estado"
+                            required>
+                    </div>
+
+                    <div class="formulario-campo">
+                        <label for="sector">
+                            Sector de la empresa
+                        </label>
+                        <select id="sector" name="sector" required>
+                            <option value="">Selecciona un sector</option>
+                            <option value="comercio">Comercio</option>
+                            <option value="servicios">Servicios</option>
+                            <option value="educacion">Educación</option>
+                            <option value="salud">Salud</option>
+                            <option value="industria">Industria</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="formulario-campo">
+                        <label for="contrasena">
+                            Crear contraseña
+                        </label>
+                        <input
+                            type="password"
+                            id="contrasena"
+                            name="contrasena"
+                            minlength="8"
+                            autocomplete="new-password"
+                            placeholder="Mínimo 8 caracteres"
+                            required>
+                    </div>
+
+                    <div class="formulario-campo">
+                        <label for="confirmar-contrasena">
+                            Confirmar contraseña
+                        </label>
+                        <input
+                            type="password"
+                            id="confirmar-contrasena"
+                            name="confirmar-contrasena"
+                            minlength="8"
+                            autocomplete="new-password"
+                            placeholder="Escribe nuevamente tu contraseña"
+                            required>
+                    </div>
+
+                    <div class="formulario-checkbox">
+                        <input
+                            type="checkbox"
+                            id="terminos"
+                            name="terminos"
+                            value="aceptados"
+                            required>
+                        <label for="terminos">
+                            Acepto los términos y condiciones de AMAC
+                            y autorizo el uso de mis datos para el registro.
+                        </label>
+                    </div>
+
+                    <div class="acciones">
+                        <button type="submit">
+                            Crear cuenta empresarial
+                        </button>
+                        <a href="login.html" class="boton boton-secundario">
+                            Ya tengo una cuenta
+                        </a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <a
+        href="tel:+528100000000"
+        class="boton boton-secundario boton-ayuda"
+        aria-label="Llamar al servicio de ayuda AMAC">
+        ¿Necesitas ayuda?
+    </a>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <h2>AMAC</h2>
+            <p>
+                Conectando experiencia con nuevas oportunidades.
+            </p>
+            <p>
+                © 2026 AMAC. Todos los derechos reservados.
+            </p>
+            <a href="index.html">Volver al inicio</a>
+        </div>
+    </footer>
+</body>
+</html>

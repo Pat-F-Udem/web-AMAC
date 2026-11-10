@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panel de empresas AMAC para administrar vacantes de empleo.">
+    <title>AMAC | Panel de empresa</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+    <a href="#contenido" class="saltar-contenido">
+        Saltar al contenido
+    </a>
+
+    <header class="encabezado">
+        <div class="contenedor encabezado-contenido">
+            <a href="index.html" class="logo" aria-label="AMAC, página principal">
+                AMAC
+            </a>
+            <nav class="navegacion" aria-label="Navegación principal">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="index.html#vacantes">Vacantes</a>
+                    </li>
+                    <li>
+                        <a href="empresa-vacantes.html" aria-current="page">
+                            Mi empresa
+                        </a>
+                    </li>
+                    <li>
+                        <a href="solicitudes-recibidas.html">
+                            Solicitudes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <div class="contenedor">
+
+            <section class="seccion">
+                <h1>Panel de empresa</h1>
+                <p>
+                    Bienvenido a tu espacio de administración.
+                    Aquí puedes consultar y organizar las vacantes
+                    publicadas por tu empresa.
+                </p>
+            </section>
+
+            <section class="seccion tarjeta">
+                <h2>Grupo Empresarial Norte</h2>
+                <p>
+                    <strong>Correo electrónico:</strong>
+                    contacto@gruponorte.com
+                </p>
+                <p>
+                    <strong>Ubicación:</strong>
+                    Monterrey, Nuevo León
+                </p>
+                <p>
+                    <strong>Tipo de cuenta:</strong>
+                    Empresa registrada
+                </p>
+            </section>
+
+            <section class="seccion">
+                <h2>Resumen de actividad</h2>
+                <div class="rejilla">
+                    <article class="tarjeta">
+                        <h3>Vacantes publicadas</h3>
+                        <p class="salario">
+                            <strong>4</strong>
+                        </p>
+                        <p>
+                            Oportunidades registradas en AMAC.
+                        </p>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Vacantes activas</h3>
+                        <p class="salario">
+                            <strong>3</strong>
+                        </p>
+                        <p>
+                            Oportunidades disponibles actualmente.
+                        </p>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>Solicitudes recibidas</h3>
+                        <p class="salario">
+                            <strong>12</strong>
+                        </p>
+                        <p>
+                            Candidaturas recibidas por la empresa.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="seccion">
+                <h2>Mis vacantes</h2>
+                <p>
+                    Consulta el estado de tus publicaciones y
+                    revisa las solicitudes de los candidatos.
+                </p>
+                <div class="acciones">
+                    <a href="#nueva-vacante" class="boton">
+                        Publicar nueva vacante
+                    </a>
+                    <a href="solicitudes-recibidas.html" class="boton boton-secundario">
+                        Ver solicitudes recibidas
+                    </a>
+                </div>
+
+                <div class="tabla-contenedor tarjeta">
+                    <table class="tabla">
+                        <caption>
+                            Vacantes registradas por Grupo Empresarial Norte
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre del puesto</th>
+                                <th scope="col">Ubicación</th>
+                                <th scope="col">Fecha de publicación</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Solicitudes</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    Asistente administrativo
+                                </th>
+                                <td>Monterrey</td>
+                                <td>02/11/2026</td>
+                                <td>
+                                    <span class="estado estado-aceptada">
+                                        Activa
+                                    </span>
+                                </td>
+                                <td>5</td>
+                                <td>
+                                    <a href="solicitudes-recibidas.html">
+                                        Consultar
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    Recepcionista
+                                </th>
+                                <td>San Pedro</td>
+                                <td>04/11/2026</td>
+                                <td>
+                                    <span class="estado estado-aceptada">
+                                        Activa
+                                    </span>
+                                </td>
+                                <td>3</td>
+                                <td>
+                                    <a href="solicitudes-recibidas.html">
+                                        Consultar
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    Auxiliar de oficina
+                                </th>
+                                <td>Guadalupe</td>
+                                <td>05/11/2026</td>
+                                <td>
+                                    <span class="estado estado-pendiente">
+                                        En revisión
+                                    </span>
+                                </td>
+                                <td>2</td>
+                                <td>
+                                    <a href="solicitudes-recibidas.html">
+                                        Consultar
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    Asesor de ventas
+                                </th>
+                                <td>Monterrey</td>
+                                <td>20/10/2026</td>
+                                <td>
+                                    <span class="estado estado-rechazada">
+                                        Cerrada
+                                    </span>
+                                </td>
+                                <td>2</td>
+                                <td>
+                                    <a href="solicitudes-recibidas.html">
+                                        Consultar
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="seccion formulario-contenedor" id="nueva-vacante">
+                <h2>Publicar una nueva vacante</h2>
+                <p>
+                    Completa los siguientes datos para registrar
+                    una nueva oportunidad laboral.
+                </p>
+                <form class="formulario" action="#" method="get">
+                    <div class="formulario-campo">
+                        <label for="puesto">
+                            Nombre del puesto
+                        </label>
+                        <input
+                            type="text"
+                            id="puesto"
+                            name="puesto"
+                            placeholder="Ej. Asistente administrativo"
+                            required>
+                    </div>
+                    <div class="formulario-campo">
+                        <label for="descripcion">
+                            Descripción del empleo
+                        </label>
+                        <textarea
+                            id="descripcion"
+                            name="descripcion"
+                            rows="4"
+                            placeholder="Describe las actividades del puesto"
+                            required></textarea>
+                    </div>
+                    <div class="formulario-fila">
+                        <div class="formulario-campo">
+                            <label for="ubicacion">
+                                Ubicación
+                            </label>
+                            <input
+                                type="text"
+                                id="ubicacion"
+                                name="ubicacion"
+                                placeholder="Ej. Monterrey"
+                                required>
+                        </div>
+                        <div class="formulario-campo">
+                            <label for="modalidad">
+                                Modalidad
+                            </label>
+                            <select id="modalidad" name="modalidad" required>
+                                <option value="">
+                                    Selecciona una opción
+                                </option>
+                                <option value="presencial">
+                                    Presencial
+                                </option>
+                                <option value="remoto">
+                                    Remoto
+                                </option>
+                                <option value="hibrido">
+                                    Híbrido
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="formulario-campo">
+                        <label for="salario">
+                            Salario mensual
+                        </label>
+                        <input
+                            type="number"
+                            id="salario"
+                            name="salario"
+                            min="1"
+                            placeholder="Ej. 12000"
+                            required>
+                    </div>
+                    <div class="formulario-campo">
+                        <label for="tipo">
+                            Tipo de jornada
+                        </label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">
+                                Selecciona una opción
+                            </option>
+                            <option value="completo">
+                                Tiempo completo
+                            </option>
+                            <option value="medio">
+                                Medio tiempo
+                            </option>
+                        </select>
+                    </div>
+                    <button type="submit">
+                        Registrar vacante
+                    </button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <a
+        href="tel:+528100000000"
+        class="boton boton-secundario boton-ayuda"
+        aria-label="Llamar al servicio de ayuda AMAC">
+        ¿Necesitas ayuda?
+    </a>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <h2>AMAC</h2>
+            <p>
+                Conectando experiencia con nuevas oportunidades.
+            </p>
+            <p>
+                © 2026 AMAC. Todos los derechos reservados.
+            </p>
+            <a href="index.html">
+                Regresar al inicio
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

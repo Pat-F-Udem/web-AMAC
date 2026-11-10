@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inicia sesión en AMAC para consultar oportunidades laborales.">
+    <title>Iniciar sesión | AMAC</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+    <a href="#contenido" class="saltar-contenido">
+        Saltar al contenido
+    </a>
+
+    <header class="encabezado">
+        <div class="contenedor encabezado-contenido">
+            <a href="index.html" class="logo">
+                AMAC
+            </a>
+            <nav class="navegacion" aria-label="Navegación principal">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="index.html#vacantes">Vacantes</a>
+                    </li>
+                    <li>
+                        <a href="login.html" aria-current="page">Iniciar sesión</a>
+                    </li>
+                    <li>
+                        <a href="registro-candidato.html">Registrarse</a>
+                    </li>
+                    <li>
+                        <a href="empresa-vacantes.html">Empresas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <div class="contenedor">
+            <section class="seccion-centada">
+                <h1>¡Bienvenido a AMAC!</h1>
+                <p>
+                    Ingresa a tu cuenta para continuar explorando
+                    oportunidades laborales.
+                </p>
+            </section>
+
+            <section class="formulario-contenedor">
+                <h2>Iniciar sesión</h2>
+                <p>
+                    Introduce tus datos para acceder a tu cuenta.
+                </p>
+                <form class="formulario" action="mis-solicitudes.html" method="get">
+
+                    <div class="formulario-campo">
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="ejemplo@correo.com"
+                            autocomplete="email"
+                            required>
+                    </div>
+
+                    <div class="formulario-campo">
+                        <label for="contrasena">
+                            Contraseña
+                        </label>
+                        <input
+                            type="password"
+                            id="contrasena"
+                            name="contrasena"
+                            placeholder="Ingresa tu contraseña"
+                            autocomplete="current-password"
+                            required>
+                    </div>
+
+                    <div class="formulario-checkbox">
+                        <input
+                            type="checkbox"
+                            id="recordar"
+                            name="recordar">
+                        <label for="recordar">
+                            Recordar mi sesión
+                        </label>
+                    </div>
+
+                    <button type="submit" class="boton-ancho">
+                        Iniciar sesión
+                    </button>
+                </form>
+
+                <div class="seccion" style="margin-top: 1.5rem;">
+                    <p>
+                        ¿Todavía no tienes una cuenta?
+                    </p>
+                    <a href="registro-candidato.html" class="boton boton-secundario">
+                        Crear cuenta de candidato
+                    </a>
+                    <p style="margin-top: 1rem;">
+                        ¿Representas a una empresa?
+                    </p>
+                    <a href="registro-empresa.html">
+                        Registrar una empresa
+                    </a>
+                </div>
+                <div class="mensaje" style="margin-top: 1.5rem;">
+                    <p>
+                        ¿Necesitas ayuda para ingresar?
+                        Comunícate con nuestro equipo de atención.
+                    </p>
+                    <a href="tel:+528100000000">
+                        Llamar a AMAC
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <a
+        href="tel:+528100000000"
+        class="boton boton-secundario boton-ayuda"
+        aria-label="Llamar al servicio de ayuda AMAC">
+        ¿Necesitas ayuda?
+    </a>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <h2>AMAC</h2>
+            <p>
+                Conectando experiencia con nuevas oportunidades.
+            </p>
+            <p>
+                © 2026 AMAC. Todos los derechos reservados.
+            </p>
+            <a href="index.html">Regresar al inicio</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AMAC conecta a personas mayores con oportunidades laborales y empresas incluyentes.">
+    <title>AMAC | Encuentra oportunidades laborales</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+    <a href="#contenido" class="saltar-contenido">
+        Saltar al contenido
+    </a>
+
+    <header class="encabezado">
+        <div class="contenedor encabezado-contenido">
+            <a href="index.html" class="logo" aria-label="AMAC, página principal">
+                AMAC
+            </a>
+            <nav class="navegacion" aria-label="Navegación principal">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#vacantes">Vacantes</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Iniciar sesión</a>
+                    </li>
+                    <li>
+                        <a href="registro-candidato.html">Registrarse</a>
+                    </li>
+                    <li>
+                        <a href="empresa-vacantes.html">Empresas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <div class="contenedor">
+
+            <section class="hero">
+                <div class="hero-contenido">
+                    <h1>Tu experiencia tiene mucho valor</h1>
+                    <p>
+                        En AMAC creemos que nunca es tarde para encontrar
+                        nuevas oportunidades. Conectamos a personas mayores
+                        con empresas que valoran su experiencia, talento
+                        y conocimientos.
+                    </p>
+                    <div class="acciones">
+                        <a href="#vacantes" class="boton">
+                            Explorar vacantes
+                        </a>
+                        <a href="registro-candidato.html" class="boton boton-secundario">
+                            Crear una cuenta
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-contenido">
+                    <h2>Una nueva oportunidad comienza aquí</h2>
+                    <p>
+                        Descubre empleos que se adaptan a tus habilidades,
+                        intereses y experiencia.
+                    </p>
+                </div>
+            </section>
+
+            <section class="seccion" aria-labelledby="titulo-buscador">
+                <h2 id="titulo-buscador">Encuentra tu próximo empleo</h2>
+                <form class="buscador" action="index.html" method="get">
+                    <div class="formulario-campo">
+                        <label for="buscar">¿Qué trabajo buscas?</label>
+                        <input
+                            type="search"
+                            id="buscar"
+                            name="buscar"
+                            placeholder="Ej. Atención al cliente">
+                    </div>
+                    <div class="formulario-campo">
+                        <label for="ubicacion">Ubicación</label>
+                        <input
+                            type="text"
+                            id="ubicacion"
+                            name="ubicacion"
+                            placeholder="Ej. Monterrey">
+                    </div>
+                    <div class="formulario-campo">
+                        <label for="modalidad">Modalidad</label>
+                        <select id="modalidad" name="modalidad">
+                            <option value="">Todas</option>
+                            <option value="presencial">Presencial</option>
+                            <option value="remoto">Remoto</option>
+                            <option value="hibrido">Híbrido</option>
+                        </select>
+                    </div>
+                    <button type="submit">
+                        Buscar empleos
+                    </button>
+                </form>
+            </section>
+
+            <section class="seccion" id="vacantes">
+                <h2>Vacantes destacadas</h2>
+                <p>
+                    Explora algunas de las oportunidades laborales
+                    disponibles en nuestra plataforma.
+                </p>
+                <div class="rejilla-vacantes">
+
+                    <article class="tarjeta-vacante">
+                        <span class="etiqueta">Tiempo completo</span>
+                        <h3>Asistente administrativo</h3>
+                        <p class="empresa">Grupo Empresarial Norte</p>
+                        <p class="ubicacion">Monterrey, Nuevo León</p>
+                        <p class="salario">$12,000 - $14,000 MXN mensuales</p>
+                        <p>
+                            Apoyo en actividades administrativas,
+                            organización de documentos y atención telefónica.
+                        </p>
+                        <div class="acciones">
+                            <a href="vacante.html" class="boton">
+                                Ver vacante
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-vacante">
+                        <span class="etiqueta">Medio tiempo</span>
+                        <h3>Recepcionista</h3>
+                        <p class="empresa">Hotel Las Torres</p>
+                        <p class="ubicacion">San Pedro Garza García</p>
+                        <p class="salario">$8,000 - $9,500 MXN mensuales</p>
+                        <p>
+                            Atención a visitantes, recepción de llamadas
+                            y orientación a clientes.
+                        </p>
+                        <div class="acciones">
+                            <a href="vacante.html" class="boton">
+                                Ver vacante
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-vacante">
+                        <span class="etiqueta">Tiempo completo</span>
+                        <h3>Asesor de ventas</h3>
+                        <p class="empresa">Comercial del Norte</p>
+                        <p class="ubicacion">Guadalupe, Nuevo León</p>
+                        <p class="salario">$10,000 - $13,000 MXN mensuales</p>
+                        <p>
+                            Orientación a clientes, seguimiento de ventas
+                            y asesoramiento sobre productos.
+                        </p>
+                        <div class="acciones">
+                            <a href="vacante.html" class="boton">
+                                Ver vacante
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-vacante">
+                        <span class="etiqueta">Medio tiempo</span>
+                        <h3>Auxiliar de biblioteca</h3>
+                        <p class="empresa">Centro Cultural Horizonte</p>
+                        <p class="ubicacion">Monterrey, Nuevo León</p>
+                        <p class="salario">$7,500 - $8,500 MXN mensuales</p>
+                        <p>
+                            Organización de libros, atención a visitantes
+                            y apoyo en actividades culturales.
+                        </p>
+                        <div class="acciones">
+                            <a href="vacante.html" class="boton">
+                                Ver vacante
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-vacante">
+                        <span class="etiqueta">Presencial</span>
+                        <h3>Guardia de recepción</h3>
+                        <p class="empresa">Servicios Integrales MX</p>
+                        <p class="ubicacion">Apodaca, Nuevo León</p>
+                        <p class="salario">$9,000 - $10,000 MXN mensuales</p>
+                        <p>
+                            Control de acceso, orientación a visitantes
+                            y registro de entradas.
+                        </p>
+                        <div class="acciones">
+                            <a href="vacante.html" class="boton">
+                                Ver vacante
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-vacante">
+                        <span class="etiqueta">Tiempo completo</span>
+                        <h3>Encargado de inventario</h3>
+                        <p class="empresa">Distribuidora del Valle</p>
+                        <p class="ubicacion">Santa Catarina, Nuevo León</p>
+                        <p class="salario">$11,000 - $13,000 MXN mensuales</p>
+                        <p>
+                            Registro de productos, revisión de existencias
+                            y organización de mercancía.
+                        </p>
+                        <div class="acciones">
+                            <a href="vacante.html" class="boton">
+                                Ver vacante
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="seccion tarjeta">
+                <h2>¿Tienes una empresa?</h2>
+                <p>
+                    Forma parte de AMAC y encuentra personas con experiencia,
+                    conocimientos y disposición para integrarse a tu equipo.
+                </p>
+                <a href="registro-empresa.html" class="boton">
+                    Registrar mi empresa
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <a
+        href="tel:+528100000000"
+        class="boton boton-secundario boton-ayuda"
+        aria-label="Llamar al servicio de ayuda AMAC">
+        ¿Necesitas ayuda?
+    </a>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <h2>AMAC</h2>
+            <p>
+                Conectando experiencia con nuevas oportunidades.
+            </p>
+            <p>
+                © 2026 AMAC. Todos los derechos reservados.
+            </p>
+            <a href="login.html">Acceso para usuarios</a>
+        </div>
+    </footer>
+</body>
+</html>

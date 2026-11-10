@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulta y administra las solicitudes recibidas por tu empresa en AMAC.">
+    <title>AMAC | Solicitudes recibidas</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+    <a href="#contenido" class="saltar-contenido">
+        Saltar al contenido
+    </a>
+
+    <header class="encabezado">
+        <div class="contenedor encabezado-contenido">
+            <a href="index.html" class="logo">
+                AMAC
+            </a>
+            <nav class="navegacion" aria-label="Navegación principal">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="empresa-vacantes.html">Mis vacantes</a>
+                    </li>
+                    <li>
+                        <a href="solicitudes-recibidas.html" aria-current="page">
+                            Solicitudes recibidas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <div class="contenedor">
+
+            <section class="seccion">
+                <h1>Solicitudes recibidas</h1>
+                <p>
+                    Consulta los perfiles de las personas interesadas
+                    en formar parte de tu empresa y revisa el estado
+                    de sus solicitudes.
+                </p>
+            </section>
+
+            <section class="rejilla seccion" aria-label="Resumen de solicitudes">
+                <article class="tarjeta">
+                    <h2>8</h2>
+                    <p>Solicitudes recibidas</p>
+                </article>
+                <article class="tarjeta">
+                    <h2>3</h2>
+                    <p>Pendientes de revisión</p>
+                </article>
+                <article class="tarjeta">
+                    <h2>3</h2>
+                    <p>Aceptadas</p>
+                </article>
+                <article class="tarjeta">
+                    <h2>2</h2>
+                    <p>No seleccionadas</p>
+                </article>
+            </section>
+
+            <section class="seccion">
+                <h2>Filtrar solicitudes</h2>
+                <form class="buscador" action="solicitudes-recibidas.html" method="get">
+                    <div class="formulario-campo">
+                        <label for="vacante">Vacante</label>
+                        <select id="vacante" name="vacante">
+                            <option value="">Todas las vacantes</option>
+                            <option value="administrativo">Asistente administrativo</option>
+                            <option value="recepcionista">Recepcionista</option>
+                            <option value="ventas">Asesor de ventas</option>
+                        </select>
+                    </div>
+                    <div class="formulario-campo">
+                        <label for="estado">Estado de solicitud</label>
+                        <select id="estado" name="estado">
+                            <option value="">Todos los estados</option>
+                            <option value="pendiente">Pendiente</option>
+                            <option value="aceptada">Aceptada</option>
+                            <option value="rechazada">No seleccionada</option>
+                        </select>
+                    </div>
+                    <button type="submit">
+                        Aplicar filtros
+                    </button>
+                </form>
+            </section>
+
+            <section class="seccion">
+                <h2>Listado de candidatos</h2>
+                <div class="rejilla">
+
+                    <article class="tarjeta">
+                        <span class="estado estado-pendiente">
+                            Pendiente
+                        </span>
+                        <h3>María González</h3>
+                        <p><strong>Vacante:</strong> Asistente administrativo</p>
+                        <p><strong>Experiencia:</strong> 12 años</p>
+                        <p><strong>Fecha:</strong> 05/11/2026</p>
+                        <p>
+                            Cuenta con experiencia en organización
+                            de documentos, atención telefónica
+                            y actividades administrativas.
+                        </p>
+                        <div class="acciones">
+                            <a href="mailto:candidato1@ejemplo.com" class="boton">
+                                Contactar
+                            </a>
+                            <button type="button">
+                                Ver perfil
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <span class="estado estado-aceptada">
+                            Aceptada
+                        </span>
+                        <h3>Roberto Martínez</h3>
+                        <p><strong>Vacante:</strong> Recepcionista</p>
+                        <p><strong>Experiencia:</strong> 8 años</p>
+                        <p><strong>Fecha:</strong> 04/11/2026</p>
+                        <p>
+                            Experiencia en atención a clientes,
+                            recepción de visitantes y manejo
+                            de llamadas telefónicas.
+                        </p>
+                        <div class="acciones">
+                            <a href="mailto:candidato2@ejemplo.com" class="boton">
+                                Contactar
+                            </a>
+                            <button type="button">
+                                Ver perfil
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <span class="estado estado-pendiente">
+                            Pendiente
+                        </span>
+                        <h3>Laura Hernández</h3>
+                        <p><strong>Vacante:</strong> Asesor de ventas</p>
+                        <p><strong>Experiencia:</strong> 10 años</p>
+                        <p><strong>Fecha:</strong> 03/11/2026</p>
+                        <p>
+                            Experiencia en servicio al cliente,
+                            asesoramiento y seguimiento de ventas.
+                        </p>
+                        <div class="acciones">
+                            <a href="mailto:candidato3@ejemplo.com" class="boton">
+                                Contactar
+                            </a>
+                            <button type="button">
+                                Ver perfil
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <span class="estado estado-rechazada">
+                            No seleccionada
+                        </span>
+                        <h3>José Ramírez</h3>
+                        <p><strong>Vacante:</strong> Recepcionista</p>
+                        <p><strong>Experiencia:</strong> 6 años</p>
+                        <p><strong>Fecha:</strong> 02/11/2026</p>
+                        <p>
+                            Experiencia en recepción,
+                            orientación a visitantes y organización.
+                        </p>
+                        <div class="acciones">
+                            <a href="mailto:candidato4@ejemplo.com" class="boton">
+                                Contactar
+                            </a>
+                            <button type="button">
+                                Ver perfil
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="seccion mensaje">
+                <h2>Administración de solicitudes</h2>
+                <p>
+                    Revisa cuidadosamente cada perfil y comunícate
+                    con los candidatos para continuar con el proceso
+                    de selección.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <a
+        href="tel:+528100000000"
+        class="boton boton-secundario boton-ayuda"
+        aria-label="Llamar al servicio de ayuda AMAC">
+        ¿Necesitas ayuda?
+    </a>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <h2>AMAC</h2>
+            <p>
+                Conectando experiencia con nuevas oportunidades.
+            </p>
+            <p>
+                © 2026 AMAC. Todos los derechos reservados.
+            </p>
+            <a href="index.html">Volver al inicio</a>
+        </div>
+    </footer>
+</body>
+</html>

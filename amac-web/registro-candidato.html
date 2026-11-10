@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Regístrate en AMAC y encuentra nuevas oportunidades laborales.">
+    <title>Registro de candidato | AMAC</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+    <a href="#contenido" class="saltar-contenido">
+        Saltar al contenido
+    </a>
+
+    <header class="encabezado">
+        <div class="contenedor encabezado-contenido">
+            <a href="index.html" class="logo">
+                AMAC
+            </a>
+            <nav class="navegacion" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#vacantes">Vacantes</a></li>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                    <li><a href="registro-candidato.html">Registrarse</a></li>
+                    <li><a href="empresa-vacantes.html">Empresas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <div class="contenedor">
+            <section class="seccion-centrada">
+                <h1>¡Únete a AMAC!</h1>
+                <p>
+                    Crea tu cuenta y descubre nuevas oportunidades
+                    laborales. Queremos conocer tu experiencia,
+                    habilidades e intereses.
+                </p>
+            </section>
+            <section class="formulario-contenedor">
+                <form class="formulario"
+                    action="registro-exitoso.html"
+                    method="get">
+
+                    <fieldset>
+                        <legend>
+                            <h2>Datos personales</h2>
+                        </legend>
+                        <div class="formulario-grupo">
+                            <label for="nombre">
+                                Nombre(s)
+                            </label>
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Escribe tu nombre"
+                                autocomplete="given-name"
+                                required>
+                        </div>
+                        <div class="formulario-grupo">
+                            <label for="apellidos">
+                                Apellidos
+                            </label>
+                            <input
+                                type="text"
+                                id="apellidos"
+                                name="apellidos"
+                                placeholder="Escribe tus apellidos"
+                                autocomplete="family-name"
+                                required>
+                        </div>
+                        <div class="formulario-grupo">
+                            <label for="fecha-nacimiento">
+                                Fecha de nacimiento
+                            </label>
+                            <input
+                                type="date"
+                                id="fecha-nacimiento"
+                                name="fecha-nacimiento"
+                                autocomplete="bday"
+                                required>
+                        </div>
+                        <div class="formulario-grupo">
+                            <label for="genero">
+                                Género
+                            </label>
+                            <select id="genero" name="genero">
+                                <option value="">Selecciona una opción</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="otro">Otro</option>
+                                <option value="no-responder">Prefiero no responder</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <hr>
+
+                    <fieldset>
+                        <legend>
+                            <h2>Información de contacto</h2>
+                        </legend>
+                        <div class="formulario-grupo">
+                            <label for="correo">
+                                Correo electrónico
+                            </label>
+                            <input
+                                type="email"
+                                id="correo"
+                                name="correo"
+                                placeholder="ejemplo@correo.com"
+                                autocomplete="email"
+                                required>
+                        </div>
+                        <div class="formulario-grupo">
+                            <label for="telefono">
+                                Número de teléfono
+                            </label>
+                            <input
+                                type="tel"
+                                id="telefono"
+                                name="telefono"
+                                placeholder="Ej. 8112345678"
+                                autocomplete="tel"
+                                required>
+                        </div>
+                        <div class="formulario-grupo">
+                            <label for="contrasena">
+                                Contraseña
+                            </label>
+                            <input
+                                type="password"
+                                id="contrasena"
+                                name="contrasena"
+                                autocomplete="new-password"
+                                required>
+                        </div>
+                        <div class="formulario-grupo">
+                            <label for="confirmar-contrasena">
+                                Confirmar contraseña
+                            </label>
+                            <input
+                                type="password"
+                                id="confirmar-contrasena"
+                                name="confirmar-contrasena"
+                                autocomplete="new-password"
+                                required>
+                        </div>
+                    </fieldset>
+                    <hr>
+
+                    <fieldset>
+                        <legend>
+                            <h2>Domicilio</h2>
+                        </legend>
+                        <div class="formulario-grupo">
+                            <label for="calle">
+                                Calle y número
+                            </label>
+                            <input
+                                type="text"
+                                id="calle"
+                                name="calle"
+                                autocomplete="street-address"
+                                required>
+                        </div>
+                        <div class="formulario-grupo">
+                            <label for="colonia">
+                                Colonia
+                            </label>
+                            <input
+                                type="text"
+                                id="colonia"
+                                name="colonia"
+                                required>
+                        </div>
+                        <div class="formulario-grupo">
+                            <label for="ciudad">
+                                Ciudad o municipio
+                            </label>
+                            <input
+                                type="text"
+                                id="ciudad"
+                                name="ciudad"
+                                autocomplete="address-level2"
+                                required>
+                        </div>
+                        <div class="formulario-grupo">
+                            <label for="estado">
+                                Estado
+                            </label>
+                            <input
+                                type="text"
+                                id="estado"
+                                name="estado"
+                                autocomplete="address-level1"
+                                required>
+                        </div>
+                        <div class="formulario-grupo">
+                            <label for="codigo-postal">
+                                Código postal
+                            </label>
+                            <input
+                                type="text"
+                                id="codigo-postal"
+                                name="codigo-postal"
+                                inputmode="numeric"
+                                autocomplete="postal-code"
+                                maxlength="5"
+                                required>
+                        </div>
+                    </fieldset>
+                    <hr>
+
+                    <fieldset>
+                        <legend>
+                            <h2>Experiencia laboral</h2>
+                        </legend>
+                        <div class="formulario-grupo">
+                            <label for="experiencia">
+                                ¿Tienes experiencia laboral?
+                            </label>
+                            <select id="experiencia" name="experiencia">
+                                <option value="">Selecciona una opción</option>
+                                <option value="si">Sí</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="formulario-grupo">
+                            <label for="ultimo-empleo">
+                                Último puesto de trabajo
+                            </label>
+                            <input
+                                type="text"
+                                id="ultimo-empleo"
+                                name="ultimo-empleo"
+                                placeholder="Ej. Asistente administrativo">
+                        </div>
+                        <div class="formulario-grupo">
+                            <label for="anos-experiencia">
+                                Años de experiencia
+                            </label>
+                            <input
+                                type="number"
+                                id="anos-experiencia"
+                                name="anos-experiencia"
+                                min="0"
+                                max="80">
+                        </div>
+                        <div class="formulario-grupo">
+                            <label for="habilidades">
+                                Cuéntanos sobre tus habilidades y conocimientos
+                            </label>
+                            <textarea
+                                id="habilidades"
+                                name="habilidades"
+                                rows="5"
+                                placeholder="Describe tus habilidades, conocimientos y actividades que sabes realizar."></textarea>
+                        </div>
+                    </fieldset>
+                    <hr>
+
+                    <fieldset>
+                        <legend>
+                            <h2>Términos y condiciones</h2>
+                        </legend>
+                        <div class="formulario-checkbox">
+                            <input
+                                type="checkbox"
+                                id="terminos"
+                                name="terminos"
+                                required>
+                            <label for="terminos">
+                                Acepto los términos y condiciones
+                                y el aviso de privacidad de AMAC.
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="acciones">
+                        <button type="submit">
+                            Crear mi cuenta
+                        </button>
+                        <a href="login.html" class="boton boton-secundario">
+                            Ya tengo una cuenta
+                        </a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <a
+        href="tel:+528100000000"
+        class="boton boton-secundario boton-ayuda">
+        ¿Necesitas ayuda?
+    </a>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <h2>AMAC</h2>
+            <p>
+                Conectando experiencia con nuevas oportunidades.
+            </p>
+            <p>
+                © 2026 AMAC. Todos los derechos reservados.
+            </p>
+            <a href="index.html">Volver al inicio</a>
+        </div>
+    </footer>
+</body>
+</html>

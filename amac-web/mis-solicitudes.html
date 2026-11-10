@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulta el estado de tus solicitudes de empleo en AMAC.">
+    <title>Mis solicitudes | AMAC</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+    <a href="#contenido" class="saltar-contenido">
+        Saltar al contenido
+    </a>
+
+    <header class="encabezado">
+        <div class="contenedor encabezado-contenido">
+            <a href="index.html" class="logo" aria-label="AMAC, página principal">
+                AMAC
+            </a>
+            <nav class="navegacion" aria-label="Navegación principal">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="index.html#vacantes">Vacantes</a>
+                    </li>
+                    <li>
+                        <a href="mis-solicitudes.html" aria-current="page">
+                            Mis solicitudes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">Mi cuenta</a>
+                    </li>
+                    <li>
+                        <a href="empresa-vacantes.html">Empresas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <div class="contenedor">
+
+            <section class="seccion">
+                <h1>Mis solicitudes</h1>
+                <p>
+                    Consulta las oportunidades laborales a las que te has
+                    postulado y revisa el progreso de cada solicitud.
+                </p>
+            </section>
+
+            <section class="seccion">
+                <h2>Resumen de actividad</h2>
+                <div class="rejilla">
+                    <article class="tarjeta">
+                        <h3>3</h3>
+                        <p>Solicitudes enviadas</p>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>1</h3>
+                        <p>En revisión</p>
+                    </article>
+                    <article class="tarjeta">
+                        <h3>1</h3>
+                        <p>Aceptadas</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="seccion">
+                <h2>Historial de postulaciones</h2>
+                <div class="rejilla-vacantes">
+
+                    <article class="tarjeta-vacante">
+                        <span class="estado estado-pendiente">
+                            En revisión
+                        </span>
+                        <h3>Asistente administrativo</h3>
+                        <p class="empresa">
+                            Grupo Empresarial Norte
+                        </p>
+                        <p class="ubicacion">
+                            Monterrey, Nuevo León
+                        </p>
+                        <p>
+                            <strong>Fecha de postulación:</strong>
+                            5 de noviembre de 2026
+                        </p>
+                        <p>
+                            Tu solicitud fue recibida y actualmente
+                            está siendo revisada por la empresa.
+                        </p>
+                        <div class="acciones">
+                            <a href="vacante.html" class="boton">
+                                Ver vacante
+                            </a>
+                            <button type="button" class="boton-peligro">
+                                Cancelar solicitud
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-vacante">
+                        <span class="estado estado-aceptada">
+                            Aceptada
+                        </span>
+                        <h3>Recepcionista</h3>
+                        <p class="empresa">
+                            Hotel Las Torres
+                        </p>
+                        <p class="ubicacion">
+                            San Pedro Garza García
+                        </p>
+                        <p>
+                            <strong>Fecha de postulación:</strong>
+                            2 de noviembre de 2026
+                        </p>
+                        <p>
+                            ¡Buenas noticias! La empresa aceptó tu
+                            solicitud y desea continuar con el proceso.
+                        </p>
+                        <div class="acciones">
+                            <a href="vacante.html" class="boton">
+                                Ver vacante
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-vacante">
+                        <span class="estado estado-rechazada">
+                            No seleccionada
+                        </span>
+                        <h3>Asesor de ventas</h3>
+                        <p class="empresa">
+                            Comercial del Norte
+                        </p>
+                        <p class="ubicacion">
+                            Guadalupe, Nuevo León
+                        </p>
+                        <p>
+                            <strong>Fecha de postulación:</strong>
+                            28 de octubre de 2026
+                        </p>
+                        <p>
+                            En esta ocasión la empresa decidió continuar
+                            con otros candidatos. ¡Sigue buscando
+                            nuevas oportunidades!
+                        </p>
+                        <div class="acciones">
+                            <a href="index.html#vacantes" class="boton">
+                                Buscar otras vacantes
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="seccion tarjeta">
+                <h2>¿Buscas nuevas oportunidades?</h2>
+                <p>
+                    Explora las vacantes disponibles y encuentra
+                    un empleo que se adapte a tus habilidades
+                    y experiencia.
+                </p>
+                <a href="index.html#vacantes" class="boton">
+                    Explorar vacantes
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <a
+        href="tel:+528100000000"
+        class="boton boton-secundario boton-ayuda"
+        aria-label="Llamar al servicio de ayuda AMAC">
+        ¿Necesitas ayuda?
+    </a>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <h2>AMAC</h2>
+            <p>
+                Conectando experiencia con nuevas oportunidades.
+            </p>
+            <p>
+                © 2026 AMAC. Todos los derechos reservados.
+            </p>
+            <a href="index.html">Volver al inicio</a>
+        </div>
+    </footer>
+</body>
+</html>

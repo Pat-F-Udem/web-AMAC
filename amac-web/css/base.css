@@ -1,0 +1,184 @@
+/* Elimina márgenes y espacios predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales de toda la página */
+body {
+    font-family: var(--fuente-principal);
+    font-size: var(--texto-base);
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+/* Imágenes adaptables */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Encabezados */
+h1,
+h2,
+h3,
+h4 {
+    color: var(--color-primario);
+    line-height: 1.3;
+    margin-bottom: var(--espacio-medio);
+}
+
+h1 {
+    font-size: var(--titulo-principal);
+}
+
+h2 {
+    font-size: var(--titulo-secundario);
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: var(--espacio-medio);
+}
+
+/* Enlaces */
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botones */
+button,
+.boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: var(--radio-pequeno);
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover,
+.boton:hover {
+    background-color: var(--color-primario-oscuro);
+    text-decoration: none;
+}
+
+/* Botón secundario */
+.boton-secundario {
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+}
+
+.boton-secundario:hover {
+    background-color: #D9A82E;
+}
+
+/* Campos de formulario */
+input,
+select,
+textarea {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.75rem;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-pequeno);
+    background-color: var(--color-blanco);
+    color: var(--color-texto);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+/* Etiquetas de formularios */
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+/* Indicador visible al seleccionar elementos con teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-secundario);
+    outline-offset: 3px;
+}
+
+/* Ocultar visualmente un elemento,
+   pero mantenerlo disponible para lectores de pantalla */
+.solo-lectores {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Enlace para saltar directamente al contenido */
+.saltar-contenido {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    z-index: 1000;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+}
+
+.saltar-contenido:focus {
+    top: 10px;
+}
+
+/* Evita que textos largos desborden sus contenedores */
+p,
+h1,
+h2,
+h3,
+a {
+    overflow-wrap: break-word;
+}
+
+/* Respeta las preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
