@@ -1,2 +1,0 @@
-# web-AMAC
-Proyecto final
