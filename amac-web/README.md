@@ -1,5 +1,4 @@
 # AMAC — Bolsa de trabajo
-# AMAC — Bolsa de trabajo
 
 Integrantes: Patricio Fonseca Ramírez, hizo todo el código
 
